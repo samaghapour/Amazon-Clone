@@ -1,0 +1,40 @@
+#SignUpSelectBox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+  cursor: pointer;
+}
+#SignUpSelectBoxIcon {
+  background-image: url('/assets/images/icons3.png');
+  background-size: 400px 750px;
+  background-position: -366px -86px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 0.2rem;
+}
+
+#SignUpSelectBoxIcon.collapse {
+  background-position: -382px -86px;
+}
+
+#SignUpSelectBoxOptions {
+  display: none;
+}
+#SignUpSelectBoxOptions.collapse {
+  display: block;
+}
+#SignUpSelectBoxOptions span {
+  display: block;
+  padding: 0.3rem 0.9rem;
+  font-size: 0.8rem;
+}
+#CreateAccountBtn {
+  margin-top: 1rem;
+  padding: 0.5rem 0;
+  text-align: center;
+}

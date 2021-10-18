@@ -1,0 +1,13 @@
+#CustomerComments {
+  width: 50%;
+}
+
+#CustomerCommentsContainer {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+.more-comment-link {
+  display: flex;
+  align-items: center;
+}

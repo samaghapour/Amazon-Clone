@@ -1,0 +1,19 @@
+.saved-product-card {
+  grid-column: auto/span 3;
+  border: 1px solid #ddd;
+}
+.saved-product-card .card-image-container {
+  height: 230px;
+  padding: 0.5rem 0;
+}
+.saved-product-card .card-second-row {
+  padding: 0.5rem;
+}
+.saved-product-card .card-second-row > * {
+  margin: 0.2rem 0;
+}
+.saved-product-card .move-to-cart-btn {
+  width: 100%;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}

@@ -1,0 +1,128 @@
+#AddToCartSec {
+  width: 15%;
+  font-family: var(--main-font-family);
+}
+
+#ProductShareBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.socialmedia-icon {
+  background-image: url('/assets/images/icons.png');
+  -webkit-background-size: 512px 256px;
+  background-size: 512px 256px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin: 0.2rem;
+  cursor: pointer;
+}
+.socialmedia-icon.email {
+  width: 19px;
+  height: 17px;
+  background-position: -256px -220px;
+}
+.socialmedia-icon.facebook {
+  width: 17px;
+  height: 17px;
+  background-position: -237px -151px;
+}
+.socialmedia-icon.twitter {
+  width: 18px;
+  height: 17px;
+  background-position: -193px -105px;
+}
+.socialmedia-icon.pinterest {
+  width: 17px;
+  height: 17px;
+  background-position: -138px -14px;
+}
+
+#ProductAddToCartBox {
+  padding: 0.8rem 1.1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d5d9d9;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 1rem;
+}
+#ProductAddToCartBox > * {
+  width: 100%;
+}
+
+#ProductDetailsDeliveryLocation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.5rem 0;
+}
+#ProductDetailsDeliveryLocationText {
+  font-size: 0.8rem;
+}
+
+.ProductAddQuantity {
+  position: relative;
+}
+.ProductAddQuantitySelectLable {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.8rem;
+  padding: 0.2rem;
+}
+.ProductAddQuantitySelect {
+  background: transparent;
+  width: 70px;
+  padding: 0.2rem;
+  z-index: 4;
+  padding-left: 1.7rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px #dddddd9c, -2px -2px 5px #dddddd9c;
+}
+
+#ProductDetailsAddToCartBtnContainer {
+  padding-top: 3rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#ProductDetailsSecureTransactionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding-bottom: 0.5rem;
+}
+#ProductDetailsSecureTransactionContainer > * {
+  margin-right: 0.2rem;
+}
+#ProductDetailsReturnPolicyContainer {
+  border-bottom: 1px solid #e7e7e7;
+  margin-bottom: 1rem;
+  padding-bottom: 0.1rem;
+}
+
+#ProductDetailsAddToListBtnContainer {
+  padding-top: 0.8rem;
+  border-top: 1px solid #e7e7e7;
+}
+
+#ProductSellBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8rem;
+}

@@ -1,0 +1,32 @@
+@import './navBelt/NavBelt.css';
+@import './navBelt/SearchBox.css';
+
+@import './navMain/NavMain.css';
+
+#Navbar {
+  color: var(--light-color);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: static;
+  top: 0;
+  left: 0;
+}
+.nav-child {
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+#PhoneDeliveryBox {
+  background: var(--secondary-color-light);
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+#PhoneDeliveryBox.close {
+  display: none;
+}
+#PhoneDeliveryBox .delivery-box-text {
+  flex-direction: row;
+}
+#PhoneDeliveryBox .delivery-country {
+  width: 85%;
+}

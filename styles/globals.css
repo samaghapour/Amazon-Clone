@@ -1,16 +1,134 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import './navbar/Navbar.css';
+@import './DeliveryModule.css';
+@import './home/HomePage.css';
+@import './footer/Footer.css';
+@import './pruducts/ProductsPage.css';
+@import './productDetails/ProductDetailsPage.css';
+@import './basket/BasketPage.css';
+@import './My_Swiper_Style.css';
+@import './404.css';
+@import './Loading.css';
+@import './signup/SignUpPage.css';
 
-a {
-  color: inherit;
-  text-decoration: none;
+:root {
+  --light-color: #fff;
+  --dark-color: #0f1111;
+  --main-font-family: 'Lato', sans-serif;
+  --link-font-family: Arial, Helvetica, sans-serif;
+  --detail-titles-font-family: Verdana, Geneva, Tahoma, sans-serif;
+  --link-color: #1985bb;
+  --details-title-color: #d18a2e;
+  --primary-color-light: #ffa41c;
+  --primary-color-dark: #b12704;
+  --yellow-color-light: #face0af3;
+  --yellow-color-dark: #f7ca00;
+  --secondary-color-light: #232f3e;
+  --secondary-color-lighter: #37475a;
+  --secondary-color-light-hover: #485769;
+  --secondary-color-dark: #131921;
 }
 
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+}
+
+.icon {
+  background-image: url(/assets/images/logos.png);
+  background-size: 350px;
+  min-height: 3rem;
+  height: 100%;
+  display: inline-block;
+  cursor: pointer;
+}
+.text-separator {
+  margin: 0 0.5rem;
+  display: inline-block;
+  color: #8d8d8d9c;
+  overflow: hidden;
+}
+.gradiantBorderLine {
+  min-height: 2px;
+  background: linear-gradient(to right, #fff, #9c9c9c69, #fff);
+  width: 100%;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.line-paragraph {
+  position: relative;
+  border-top: 1px solid #ddd;
+}
+.line-paragraph-span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.3rem;
+  font-size: 0.8rem;
+  text-align: center;
+  background: #fff;
+  color: #636363;
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+.rate-stars {
+  width: 97px;
+  height: 100%;
+  background-image: url(/assets/images/rateStars.png);
+  background-size: 500px;
+  display: inline-block;
+  margin-right: 0.2rem;
+  background-position: 0 -83px;
+}
+.Yellow-btn {
+  border-radius: 1rem;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+  background: var(--yellow-color-light);
+  border: 1px solid var(--yellow-color-light);
+  font-size: 0.9rem;
+  padding: 0.4rem 0;
+}
+.Yellow-btn:hover {
+  background: var(--yellow-color-dark);
+}
+.white-btn {
+  padding: 0.4rem 0.7rem;
+  text-align: center;
+  background: var(--light-color);
+  box-shadow: 1px 1px 1px #bec0c0, -1px -1px 1px #bec0c0;
+  border: none;
+  margin: 0.4rem auto;
+  border-radius: 7px;
+  cursor: pointer;
+  outline: 1px solid #d5d9d9;
+}
+.white-btn:hover {
+  background: #f7fafa;
+}
+.gray-btn {
+  cursor: pointer !important;
+  width: 100%;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 1 1px 3 #dbdbdb;
+  background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
+  outline: 1px solid #adb1b8;
+  padding: 0.3rem 0.5rem;
+  text-align: start;
+}
+.gray-btn:hover {
+  background: linear-gradient(to bottom, #f7f8fa, #d7d7d8);
+  cursor: pointer;
+}
+
+#__next {
+  position: relative;
 }

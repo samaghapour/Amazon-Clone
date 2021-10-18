@@ -1,0 +1,15 @@
+@import './ProductCard.css';
+
+#ProductsCol2 {
+  margin: 1rem 0.75rem;
+  padding: 0.5rem 0;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: flex-start;
+  justify-items: stretch;
+  grid-column-gap: 0.8rem;
+  position: relative;
+  width: 1180px;
+  min-height: 100vh;
+}

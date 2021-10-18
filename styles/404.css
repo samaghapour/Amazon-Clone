@@ -1,0 +1,11 @@
+#Error404Container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+#HomeLink404 {
+  cursor: pointer;
+}

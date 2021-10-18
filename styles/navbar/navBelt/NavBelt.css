@@ -1,0 +1,137 @@
+#NavBelt {
+  background: var(--secondary-color-dark);
+  height: 3.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--main-font-family);
+}
+/* coulmn 1 */
+#NavBeltCol1 {
+  display: flex;
+  height: 100%;
+  width: 290px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.nav-brand {
+  background-position: -4px -39px;
+  width: 115px;
+}
+
+#PhoneMenu.close {
+  display: none;
+}
+.locationIcon {
+  background-image: url(/assets/images/logos.png);
+  background-size: 350px;
+  height: 100%;
+  display: inline-block;
+  cursor: pointer;
+  flex-basis: 1.5rem;
+  background-position: -68px -364px;
+}
+#DeliveryBox,
+#PhoneDeliveryBox {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 0.5rem;
+  height: 100%;
+  width: 50%;
+  user-select: none;
+  color: inherit;
+}
+.delivery-box-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 80%;
+  font-size: 0.8rem;
+}
+.deliver-country {
+  width: 100%;
+}
+
+/* coulmn 2 */
+#NavBeltCol2 {
+  display: flex;
+  height: 100%;
+  width: 375px;
+  align-items: center;
+  justify-content: space-between;
+}
+#NavBeltCol2 > *,
+#NavBeltCol1 > * {
+  height: 100%;
+  padding: 0 0.5rem;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#NavBeltCol2 > *:hover,
+#NavBeltCol1 > *:hover {
+  outline: 2px solid var(--light-color);
+  cursor: pointer;
+}
+/* languages box */
+#Languages {
+  width: 25%;
+  height: 100%;
+  margin: 0 0.5rem;
+}
+#Flag {
+  background-image: url(/assets/images/flags.png);
+  background-size: 250px;
+  background-position: 0px 125px;
+  height: 80%;
+  width: 100%;
+  flex-basis: 2rem;
+  display: inline-block;
+}
+
+/* sign in box*/
+#SignIn {
+  justify-content: flex-start;
+}
+
+/* returns box */
+#Returns {
+  width: 20%;
+  flex-direction: column;
+  justify-content: center;
+}
+#Returns b,
+#Username {
+  font-size: 0.9rem;
+  font-weight: bolder;
+}
+
+/* basket box */
+#BasketBox {
+  width: 60px;
+  position: relative;
+  color: inherit;
+}
+#BasketNumber {
+  position: absolute;
+  top: 10%;
+  left: 34%;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  color: var(--primary-color-dark);
+}
+#BasketLogo {
+  background-image: url(/assets/images/logos.png);
+  background-size: 375px;
+  background-position: -7px -348px;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

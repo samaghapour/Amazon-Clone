@@ -1,0 +1,16 @@
+@import './CommentBox.css';
+@import './CustomerComments.css';
+@import './CustomerStars.css';
+
+#DetailsRow6 {
+  width: 100%;
+  font-family: var(--main-font-family);
+  padding-bottom: 2rem;
+}
+#DetailsRow6Container {
+  display: flex;
+  width: 100%;
+}
+#DetailsRow6Container .details-black-title {
+  font-size: 1.1rem;
+}

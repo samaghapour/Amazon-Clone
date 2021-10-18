@@ -1,0 +1,15 @@
+#NavMainList {
+  display: flex;
+  list-style: none;
+  padding: 0 1rem;
+}
+.nav-main-items a {
+  padding: 0.3rem 0.75rem;
+  text-decoration: none;
+  color: inherit;
+  text-decoration: none;
+}
+.nav-main-items:hover {
+  outline: 2px solid var(--light-color);
+  cursor: pointer;
+}

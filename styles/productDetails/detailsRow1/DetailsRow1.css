@@ -1,0 +1,11 @@
+@import './AddToCartSec.css';
+@import './ImagesSec.css';
+@import './TextSec.css';
+
+#DetailsRow1 {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}

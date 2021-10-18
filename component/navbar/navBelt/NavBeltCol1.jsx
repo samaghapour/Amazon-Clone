@@ -1,0 +1,25 @@
+import Link from 'next/link';
+import { ToggleModule } from '../../../helpers';
+
+const NavBeltCol1 = ({ location }) => {
+  return (
+    <div id='NavBeltCol1'>
+      <span id='PhoneMenu' className='close' />
+
+      <Link href='/'>
+        <div className='icon nav-brand' />
+      </Link>
+
+      <div id='DeliveryBox' onClick={ToggleModule}>
+        <span className='locationIcon' />
+
+        <div className='delivery-box-text'>
+          <span>Deliver to</span>
+          <span className='deliver-country  ellipsis'>{location}</span>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default NavBeltCol1;

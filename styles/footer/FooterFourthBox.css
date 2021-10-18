@@ -1,0 +1,41 @@
+#FooterFourthBox {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  background: var(--secondary-color-dark);
+}
+#FooterFourthBoxTable {
+  max-width: 1000px;
+  width: 100%;
+}
+.footer-fourth-box-items {
+  font-size: 0.7rem;
+  padding: 0 0.5em;
+  vertical-align: top;
+}
+.footer-fourth-box-items-span {
+  color: #999;
+  font-size: 0.6rem;
+}
+.footer-fourth-box-spacer {
+  width: 4%;
+}
+#FooterFourthBoxRow2 {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1000px;
+  font-size: 0.8rem;
+}
+#FooterFourthBoxRow2 > * {
+  margin: 0 0.3rem;
+}
+#FooterFourthBoxRow2 span a {
+  text-decoration: underline;
+  color: var(--light-color);
+  font-weight: bolder;
+}

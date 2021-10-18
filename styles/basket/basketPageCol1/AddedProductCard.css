@@ -1,0 +1,78 @@
+.added-product-card {
+  width: 100%;
+  flex-basis: 100%;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  min-height: 160px;
+}
+.added-product-card-image-box {
+  flex-basis: 15%;
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+.added-product-card-image {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: auto auto;
+}
+.added-product-card-text-box {
+  flex-basis: 80%;
+  padding: 0 1rem;
+}
+.added-product-card-title-container {
+  width: 80%;
+}
+.added-product-card-title-container .card-title {
+  height: auto;
+}
+.is-in-stock-span {
+  color: #007600;
+  font-size: 0.8rem;
+  margin: 0.2rem 0;
+  display: block;
+}
+.added-product-card-gift-checkbox-container {
+  font-size: 0.8rem;
+}
+
+.added-product-card-edit-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 30px;
+  padding: 0.2rem 0;
+}
+
+.added-product-card-edit-container .ProductAddQuantity {
+  position: relative;
+  width: 80px;
+  height: 100%;
+}
+.added-product-card-delete-btn,
+.added-product-card-save-for-later-btn,
+.added-product-card-compare-btn {
+  background: transparent;
+  outline: none;
+  border: none;
+  color: var(--link-color);
+  text-align: center;
+  cursor: pointer;
+}
+.added-product-card-delete-btn:hover,
+.added-product-card-save-for-later-btn:hover,
+.added-product-card-compare-btn:hover {
+  text-decoration: underline;
+}
+
+.added-product-card-price-box {
+  flex-basis: 5%;
+}
+.added-product-card-price {
+  font-weight: 700;
+  font-size: 1.1rem;
+  font-family: var(--link-font-family);
+}

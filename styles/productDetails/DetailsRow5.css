@@ -1,0 +1,23 @@
+#DetailsRow5 {
+  font-family: var(--main-font-family);
+  width: 100%;
+  padding-bottom: 2rem;
+}
+#TypicalQuestionsBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2.5rem 3.5rem;
+}
+#TypicalQuestionsBox span {
+  padding: 0.2rem 0;
+  font-size: 0.9rem;
+}
+#TypicalQuestionsBox li {
+  list-style: none;
+  padding: 0.2rem 0;
+  font-size: 0.9rem;
+  color: #525151;
+}

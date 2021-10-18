@@ -1,0 +1,45 @@
+#FooterThirdBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-top: 0.5px solid #dddddd3a;
+  color: #ddd;
+  height: 7rem;
+}
+
+#FooterThirdBoxCol1 {
+  flex-basis: 7rem;
+}
+.footer-brand {
+  width: 100%;
+  background-position: -4px -39px;
+}
+
+#FooterThirdBoxCol2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: auto;
+  padding: 0 2rem;
+}
+#FooterThirdBoxCol2 > * {
+  margin: 0.5rem;
+  height: 100%;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+#FooterThirdBoxFlag i {
+  background-image: url(/assets/images/flags.png);
+  background-size: 250px;
+  background-position: 0px 110px;
+  height: 1.2rem;
+  width: 2rem;
+  display: inline-block;
+}

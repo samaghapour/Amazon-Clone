@@ -1,0 +1,13 @@
+@import './MenuBtn.css';
+@import './NavList.css';
+
+#NavMain {
+  background: var(--secondary-color-light);
+  color: var(--light-color);
+  font-family: var(--main-font-family);
+  height: 2.4rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.9rem;
+}

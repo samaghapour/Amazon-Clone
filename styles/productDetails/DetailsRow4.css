@@ -1,0 +1,15 @@
+#DetailsRow4 {
+  width: 100%;
+  font-family: var(--main-font-family);
+}
+#ProductDescription {
+  padding: 1rem 1.1rem;
+  line-height: 1.4rem;
+  width: 100%;
+}
+#ProductDescription ul {
+  list-style: none;
+}
+#ProductDescription ul li {
+  padding: 0.4rem;
+}

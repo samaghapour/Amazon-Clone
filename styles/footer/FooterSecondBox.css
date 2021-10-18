@@ -1,0 +1,30 @@
+#FooterSecondBox {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-bottom: 3rem;
+}
+#FooterSecondBoxRow {
+  display: table-row;
+}
+.FooterSecondBoxCol {
+  display: table-cell;
+  padding: 0 3rem;
+}
+.FooterSecondBoxCol li {
+  list-style: none;
+  margin: 0.5rem 0;
+}
+.FooterSecondBoxColHead {
+  width: 100%;
+  color: inherit;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.FooterLinks {
+  text-decoration: none;
+  color: #ddd;
+}
+.FooterLinks:hover {
+  text-decoration: underline;
+}

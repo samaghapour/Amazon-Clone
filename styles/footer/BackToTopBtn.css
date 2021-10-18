@@ -1,0 +1,15 @@
+#BackToTopBtn {
+  background: var(--secondary-color-lighter);
+  color: var(--light-color);
+  text-align: center;
+  padding: 0.9rem;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+#BackToTopBtn:hover {
+  background: var(--secondary-color-light-hover);
+}

@@ -1,0 +1,42 @@
+@import './detailsRow1/DetailsRow1.css';
+@import './DetailsRow2.css';
+@import './DetailsRow3.css';
+@import './DetailsRow4.css';
+@import './DetailsRow5.css';
+@import './detailsRow6/DetailsRow6.css';
+@import './DetailsRow7.css';
+
+#ProductDetailsPage {
+  min-height: 100vh;
+  width: 100%;
+  padding: 1rem;
+  position: relative;
+}
+
+#ProductDetailsPage > * {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #cfcfcf;
+  padding-bottom: 2rem;
+}
+
+.details-a {
+  text-decoration: none;
+  font-family: var(--link-font-family);
+  color: var(--link-color);
+  cursor: pointer;
+}
+.details-a:hover {
+  color: var(--primary-color-dark);
+  text-decoration: underline;
+}
+
+.details-orange-title {
+  font-weight: 600;
+  font-family: var(--detail-titles-font-family);
+  color: var(--details-title-color);
+}
+.details-black-title {
+  padding: 0.5rem 0 1rem 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+}

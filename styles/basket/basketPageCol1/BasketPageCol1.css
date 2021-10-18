@@ -1,0 +1,82 @@
+@import './AddedProductCard.css';
+@import './SavedProductCard.css';
+
+#BasketPageCol1 {
+  flex-basis: 80%;
+  margin: 0 1rem 0 0;
+}
+#AddedProductsRow {
+  background: var(--light-color);
+  padding: 1.4rem;
+  width: 100%;
+}
+#AddedProductsRowHeader {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#AddedProductsRowTitle {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+#AddedProductsRowSpan {
+  color: #474747;
+  font-size: 0.9rem;
+}
+
+#AddedProductsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+#AddedProductsTotalContainer {
+  width: 100%;
+  margin-top: 0.3rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+#AddedProductsTotalSpan {
+  font-size: 1.2rem;
+}
+
+#SavedProductsRow {
+  width: 100%;
+}
+#SavedProductsContainer {
+  min-height: 30vh;
+  background: var(--light-color);
+  margin-top: 1rem;
+  padding: 1.4rem 1.4rem 1.6rem;
+  width: 100%;
+}
+#SavedProducts {
+  padding: 1rem 0;
+  width: 100%;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: flex-start;
+  justify-items: stretch;
+  grid-column-gap: 0.8rem;
+  position: relative;
+}
+#SavedProductsContainerTitle {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+}
+
+#BasketPageDescriptionContainer {
+  width: 100%;
+  padding: 1.5rem 0;
+}
+#BasketPageDescriptionContainer p {
+  font-size: 0.8rem;
+  display: block;
+}

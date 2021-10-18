@@ -1,0 +1,10 @@
+@import './CallToCheckoutBox.css';
+@import './SponsoredProductCard.css';
+@import './SponsoredProductsBox.css';
+
+#BasketPageCol2 {
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}

@@ -1,0 +1,20 @@
+#SponsoredProductsBox {
+  background: var(--light-color);
+  margin: 1rem 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem 1rem 2rem;
+  width: 100%;
+}
+#SponsoredProductsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+#SponsoredProductsBoxTitle {
+  font-size: 0.7rem;
+  width: 100%;
+  padding: 0 0 0.5rem;
+}

@@ -1,0 +1,134 @@
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.slick-slider {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.slick-slider .product-card {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  border: none !important;
+}
+.slick-slider .product-card .card-image-container {
+  max-height: 35%;
+}
+.slick-slider .product-card .card-second-row {
+  max-height: 65%;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+}
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: '';
+}
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+.slick-slide > div {
+  height: 100%;
+}
+
+.slick-arrow {
+  background: #000;
+  display: inline-block !important;
+  padding: 0.6rem;
+  font-family: var(--detail-titles-font-family);
+  text-align: center;
+  background: transparent;
+  -webkit-box-shadow: 1px 1px 3px #bec0c0, -1px -1px 3px #bec0c0;
+  box-shadow: 1px 1px 3px #bec0c0, -1px -1px 3px #bec0c0;
+  border: none;
+  margin: 0 1rem;
+  border-radius: 7px;
+  cursor: pointer;
+  outline: 1px solid #d5d9d9;
+  width: 34px !important;
+  height: 37px !important;
+}
+.slick-arrow:hover {
+  background: #f7fafa;
+}
+/* for products slider */
+.swiperIcon {
+  background-image: url('/assets/images/icons2.png');
+  -webkit-background-size: 400px 900px;
+  background-size: 400px 900px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+#PrevBtnIcon {
+  width: 11px;
+  height: 15px;
+  background-position: -123px -7px;
+}
+#NextBtnIcon {
+  width: 11px;
+  height: 15px;
+  background-position: -105px -7px;
+}
+
+/* for home product images slider */
+.homeSliderIcon {
+  background-image: url('/assets/images/homeSliderArrows.png');
+  background-repeat: no-repeat;
+  background-size: 68px 52px;
+  display: inline-block;
+  height: 70px;
+  width: 35px;
+}
+
+#HomeSliderPrev {
+  background-position: -3px 2px;
+}
+#HomeSliderNext {
+  background-position: -30px 2px;
+}
+#HomeSlider .slick-slider {
+  position: relative;
+  justify-content: space-between !important;
+}
+#HomeSlider .slick-arrow {
+  z-index: 50;
+  background: transparent;
+  box-shadow: none;
+  outline: none;
+  width: 60px !important;
+  height: 90% !important;
+}
+#HomeSlider .slick-arrow:hover {
+  outline: 2px solid #fff;
+}
+
+#HomeSlider .slick-list {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}

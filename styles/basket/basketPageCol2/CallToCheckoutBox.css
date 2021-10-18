@@ -1,0 +1,19 @@
+#CallToCheckoutBox {
+  background: var(--light-color);
+  width: 100%;
+  padding: 1rem 1rem 2rem;
+}
+
+#CallToCheckoutBoxTitle {
+  font-size: 1.2rem;
+  text-align: start;
+  width: 100%;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+#CallToCheckoutBoxCheckBoxContainer {
+  padding: 0 0 1rem 0;
+}
+#CheckoutBtn {
+  border-radius: 8px;
+}

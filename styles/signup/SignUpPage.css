@@ -1,0 +1,133 @@
+@import './SignInBox.css';
+@import './SignUpBox.css';
+
+#SignUpPage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-family: var(--main-font-family);
+}
+#SignUpPageMain {
+  width: 100%;
+  min-height: 60vh;
+  padding-bottom: 2rem;
+}
+#SignUpPageFooter {
+  background: linear-gradient(to right, #fff, #fcfcfc, #fff);
+  width: 100%;
+  font-size: 0.7rem;
+}
+#SignUpPageFooter ul {
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+#SignUpPageFooter ul li {
+  padding: 0 1rem;
+}
+#SignUpPageFooter span {
+  text-align: center;
+  display: block;
+  width: 100%;
+  color: #333;
+}
+
+.sign-up-brand-logo {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+.sign-up-brand {
+  background-image: url(/assets/images/icons3.png);
+  background-position: -5px -130px;
+  background-size: 400px 750px;
+  width: 103px;
+  height: 31px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* classes */
+.sign-up-boxes {
+  width: 50%;
+  display: none;
+  margin: 0 auto;
+}
+.sign-up-boxes.active {
+  display: block;
+}
+.sign-up-boxes-card {
+  width: 45%;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  display: block;
+  margin: 0 auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.sign-up-boxes-card-title {
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin-bottom: 0.7rem;
+}
+.sign-up-boxes-card-label {
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+.sign-up-boxes-card-input {
+  width: 100%;
+  margin: 0.3rem 0 1rem;
+  padding: 0.5rem 0.2rem;
+  outline: 1px solid #333;
+  border: none;
+  border-radius: 3px;
+  transition: 0.2s all ease;
+}
+.sign-up-boxes-card-input:focus {
+  outline: 1px solid var(--primary-color-light);
+  box-shadow: 1px 1px 7px var(--primary-color-light),
+    -1px -1px 7px var(--primary-color-light);
+}
+.sign-up-boxes-card-form-btn {
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+  outline: 1px solid var(--primary-color-dark);
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+}
+.sign-up-boxes-card-form-btn:hover {
+  background: linear-gradient(to bottom, #f7dfa5, #e9b42d 60%);
+}
+.sign-up-boxes-card-description {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+}
+.sign-up-boxes-second-row {
+  width: 45%;
+  display: block;
+  margin: 2rem auto;
+}
+
+.sign-up-boxes-second-row > * {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.sign-up-boxes-second-row > p {
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+}

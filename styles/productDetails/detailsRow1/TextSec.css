@@ -1,0 +1,62 @@
+#TextSec {
+  width: 55%;
+  padding: 1rem;
+  font-family: var(--main-font-family);
+}
+.RowsTitle {
+  color: #333;
+}
+
+#TextSecRow1,
+#TextSecRow2 {
+  width: 100%;
+  border-bottom: 1px solid #cfcfcf;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+#ProductDetailsTitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+#ProductBrandStore {
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  width: fit-content;
+}
+#TextSec .card-rate-box {
+  width: 44%;
+}
+
+/* second row */
+#TextSecRow2 {
+  border: none;
+}
+#ProductDetailsPrice {
+  padding: 0.2rem 0 0.5rem 0;
+}
+.selected-option {
+  font-size: 1.1rem;
+  color: #000;
+  font-weight: 600;
+}
+.product-options-box {
+  display: flex;
+  width: 100%;
+  list-style: none;
+  padding: 0.5rem 0;
+  flex-wrap: wrap;
+}
+.product-options-item {
+  padding: 0.2rem 0.4rem;
+  margin: 0 0.5rem 0 0;
+  cursor: pointer;
+  outline: 1px solid #cfcfcf;
+  transition: 0.1s all ease;
+}
+.product-options-item:hover {
+  background: #f3f2f2bd;
+}
+#ProductDetailsDescription ul {
+  list-style: none;
+}

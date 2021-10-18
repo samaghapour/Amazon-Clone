@@ -1,0 +1,36 @@
+@import './basketPageCol1/BasketPageCol1.css';
+@import './basketPageCol2/BasketPageCol2.css';
+
+#BasketPage {
+  position: relative;
+  font-family: var(--main-font-family);
+  width: 100%;
+}
+#BasketPageRow1 {
+  background: #eaeded;
+  width: 100%;
+  display: flex;
+  padding: 0.9rem 1.1rem 1.1rem;
+}
+#BasketPageRow2 {
+  background: var(--light-color);
+  height: 370px;
+  display: block;
+  position: static;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 29px;
+  padding-right: 29px;
+  margin: 12px 0 22px;
+}
+#BasketPageRow2TitleContainer {
+  padding: 0.3rem 0;
+}
+.BaketPageTitles {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0.3rem 0;
+  display: inline-block;
+  font-family: var(--detail-titles-font-family);
+}

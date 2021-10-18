@@ -1,0 +1,11 @@
+@import './BackToTopBtn.css';
+@import './FooterSecondBox.css';
+@import './FooterThirdBox.css';
+@import './FooterFourthBox.css';
+
+#Footer {
+  width: 100%;
+  font-family: var(--main-font-family);
+  background: var(--secondary-color-light);
+  color: var(--light-color);
+}

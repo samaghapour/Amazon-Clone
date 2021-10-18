@@ -1,0 +1,100 @@
+#CustomerStars {
+  width: 30%;
+}
+#CustomerStars .card-rate-box {
+  width: 65%;
+}
+#CustomerStars .card-rate-box .rate-numbers {
+  color: #000;
+  font-size: 1.1rem;
+}
+#GlobalRatingSpan {
+  padding: 0.5rem 0;
+  display: block;
+  font-size: 0.9rem;
+  color: #525151;
+  font-family: var(--detail-titles-font-family);
+}
+#StarsProgressBarBox {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.StarsProgressBarItem {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  margin: 0.4rem 0;
+}
+.StarsProgressBarItem .details-a {
+  font-size: 0.9rem;
+}
+.StarsProgressBarItem:hover .StarsProgressBar {
+  background: #fff6e0;
+  border: 1px solid var(--primary-color-dark);
+}
+.StarsProgressBar {
+  min-height: 20px;
+  margin: 0 0.3rem;
+  width: 65%;
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #f0f2f2;
+}
+.StarsProgressBar::after {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  content: '';
+  height: 100%;
+  background: var(--primary-color-light);
+  border: 1px solid var(--primary-color-dark);
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.StarsProgressBar.five::after {
+  width: 3%;
+}
+.StarsProgressBar.four::after {
+  width: 90%;
+}
+.StarsProgressBar.three::after {
+  width: 2%;
+}
+.StarsProgressBar.two::after {
+  width: 3%;
+}
+.StarsProgressBar.one::after {
+  width: 2%;
+}
+#RatingsCalculateLink {
+  padding-bottom: 1.5rem;
+  display: block;
+  border-bottom: 1px solid #ddd;
+  width: 70%;
+}
+#ReviewProductBox {
+  padding: 1rem 0;
+  width: 70%;
+  border-bottom: 1px solid #ddd;
+}
+#ReviewBtn {
+  padding: 0.4rem 0.7rem;
+  width: 100%;
+  text-align: center;
+  background: transparent;
+  -webkit-box-shadow: 1px 1px 3px #bec0c0, -1px -1px 3px #bec0c0;
+  box-shadow: 1px 1px 3px #bec0c0, -1px -1px 3px #bec0c0;
+  border: none;
+  margin: 1rem auto;
+  border-radius: 7px;
+  cursor: pointer;
+  outline: 1px solid #d5d9d9;
+}
+#ReviewBtn:hover {
+  background: #f7fafa;
+}

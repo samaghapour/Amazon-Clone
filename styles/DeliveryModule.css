@@ -1,0 +1,89 @@
+#DeliveryModule {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #0000006b;
+  z-index: 100;
+  display: none;
+}
+#DeliveryModule.openModule {
+  display: block;
+}
+#LocationCard {
+  background: var(--light-color);
+  font-family: var(--main-font-family);
+  width: 375px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: #d5d9d9;
+  box-shadow: 0 0 14px 0 #000000;
+  overflow: hidden;
+}
+#LocationCardTitle {
+  padding: 1rem 1.7rem;
+  display: block;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  background: #f0f2f2;
+  border-bottom: 1px solid #d5d9d9;
+}
+#LocationCardContent {
+  padding: 1rem 1.7rem;
+  width: 100%;
+}
+#LocationCardContent p {
+  color: #565959;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  text-align-last: left;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+#LocationCardSignInBtn,
+#LocationSelect,
+#LocationCardDoneBtn {
+  width: 100%;
+  border-radius: 7px;
+  background: var(--yellow-color-light);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.3rem 0;
+  margin-bottom: 1rem;
+}
+#LocationCardSignInBtn:hover,
+#LocationCardDoneBtn:hover {
+  background: var(--yellow-color-dark);
+}
+#LocationCardZipCode {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+#LocationCardLocationSelect {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0.5rem 0;
+}
+#LocationCardLocationSelectRow1 {
+  display: block;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+}
+#LocationCardDoneBtn {
+  width: auto;
+  padding: 0.5rem 0.8rem;
+  margin-left: auto;
+  display: block;
+}

@@ -1,0 +1,47 @@
+#ImagesSec {
+  width: 30%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-start;
+}
+#ImagesBox {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-right: 0.2rem;
+}
+.product-images {
+  width: 50px;
+  height: 50px;
+  margin: 0.2rem 0;
+  outline: 1px solid #747474e3;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+.product-images:hover {
+  outline: 2px solid var(--primary-color-dark);
+  box-shadow: 2px 2px 5px var(--primary-color-dark),
+    -2px -2px 5px var(--primary-color-dark);
+}
+#LargeImageBox {
+  font-family: var(--main-font-family);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+  cursor: pointer;
+}
+#SelectedImage {
+  max-height: 90%;
+  max-width: 100%;
+}
+#LargeImageDescription {
+  padding: 2rem;
+  text-align: center;
+}

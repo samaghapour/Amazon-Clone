@@ -1,0 +1,43 @@
+#DetailsRow2 {
+  padding-bottom: 2rem;
+  width: 100%;
+  font-family: var(--main-font-family);
+}
+.DetailsSearchTitle {
+  padding: 0.5rem 0 1rem 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+#DetailsRow2 span {
+  color: #4b4a4a;
+  font-size: 0.9rem;
+  padding: 0.4rem 0;
+  display: block;
+}
+.DetailsSearchInputBox {
+  width: 55%;
+  position: relative;
+  padding: 0.5rem 0;
+}
+.DetailsSearchIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('/assets/images/logos.png');
+  background-size: 180px;
+  background-repeat: no-repeat;
+  width: 29px;
+  height: 29px;
+  background-position: 0px -142px;
+  z-index: 5;
+}
+.DetailsSearchInput {
+  outline: 1px solid #ddd;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.2rem 1rem;
+  z-index: 4;
+  font-size: 1rem;
+}

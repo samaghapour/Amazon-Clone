@@ -1,0 +1,14 @@
+@import './HomeProduct.css';
+
+#HomeProductsBox {
+  width: 100%;
+  background: transparent;
+  display: grid;
+  grid-template-rows: auto;
+  grid-auto-flow: dense;
+  grid-template-columns: 4fr 4fr 3fr;
+  grid-gap: 1rem;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-around;
+}

@@ -1,0 +1,59 @@
+#DetailsRow3 {
+  width: 100%;
+}
+#DetailsRow3Container {
+  display: flex;
+  width: 100%;
+  font-family: var(--main-font-family);
+}
+
+#DetailsRow3Col1 {
+  width: 50%;
+  margin: 0.5rem;
+}
+#ProductInformationTable {
+  width: 100%;
+}
+
+#ProductInformationTable tr {
+  display: flex;
+  width: 100%;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.product-information-th {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: #f3f3f3;
+  color: #555454;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.product-information-td {
+  width: 50%;
+  padding: 0.3rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#DetailsRow3Col2 {
+  width: 50%;
+  margin: 0.5rem;
+}
+.DetailsRow3Title {
+  padding: 0 0 7px 10px;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #d4d4d4;
+  line-height: 1.7rem;
+}
+#WarrantyBox {
+  margin-bottom: 0.8rem;
+}
+#FeedbackBox {
+  margin-bottom: 0.8rem;
+}

@@ -1,0 +1,44 @@
+.menu-btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50px;
+  height: 80%;
+  cursor: pointer;
+  padding: 0.3rem 0.5rem;
+}
+.menu-btn:hover {
+  outline: 2px solid var(--light-color);
+  cursor: pointer;
+}
+.menu-btn-icon,
+#PhoneMenu {
+  display: inline-block;
+  min-height: 2px;
+  min-width: 17px;
+  background: var(--light-color);
+  position: relative;
+}
+.menu-btn-icon::after,
+#PhoneMenu::after {
+  content: '';
+  position: absolute;
+  top: -200%;
+  left: 0;
+  background: inherit;
+  min-height: 2px;
+  min-width: 17px;
+}
+.menu-btn-icon::before,
+#PhoneMenu::before {
+  content: '';
+  position: absolute;
+  top: 200%;
+  left: 0;
+  background: inherit;
+  min-height: 2px;
+  min-width: 17px;
+}
+.menu-btn-text {
+  margin: 0 0.3rem;
+}

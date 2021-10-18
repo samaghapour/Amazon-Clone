@@ -1,0 +1,14 @@
+#DetailsRow7 {
+  width: 100%;
+  font-family: var(--main-font-family);
+  padding-bottom: 0 !important;
+}
+#DetailsRow7SliderContainer {
+  height: 325px;
+}
+#DetailsRow7 .card-delivery-date-box {
+  display: none;
+}
+#DetailsRow7 .card-image-container {
+  height: 150px;
+}
