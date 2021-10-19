@@ -1,0 +1,105 @@
+#SideMenu {
+  height: 100vh;
+  width: 365px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+}
+#SideMenu.close {
+  transform: translateX(-100%);
+}
+
+#SideMenuHeader {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: var(--secondary-color-light);
+  color: var(--light-color);
+  height: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+#SideMenuHeader span {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+#sideMenuProfileIcon {
+  width: 25px;
+  height: 27px;
+  background: url('/assets/images/logos.png');
+  background-position: -137px -338px;
+  background-size: 350px;
+  margin-right: 0.7rem;
+}
+
+#SideMenuMain {
+  background: white;
+  width: 100%;
+  height: 92%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* classes  */
+.side-menu-content {
+  background: inherit;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.side-menu-content-list {
+  list-style: none;
+  border-bottom: 1px solid #ddd;
+  padding: 0.5rem 0;
+}
+.side-menu-content-list-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: block;
+  padding: 1rem 2rem 0.5rem;
+}
+.side-menu-content-list-item {
+  padding: 0.7rem 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.side-menu-content-list-item:hover,
+.side-menu-content-list-header:hover {
+  background: #eaeded;
+}
+.side-menu-content-list-item-arrow {
+  width: 10px;
+  height: 14px;
+  background-image: url('/assets/images/logos.png');
+  background-size: 350px;
+  background-position: -137px -288px;
+  display: inline-block;
+}
+
+.side-menu-content-list-header {
+  padding: 0.5rem 2rem 1rem;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.side-menu-content-list-header-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--secondary-color-light);
+}
+.side-menu-content-list-header-arrow {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url('/assets/images/logos.png');
+  background-size: 350px;
+  background-position: -137px -308px;
+  display: inline-block;
+}

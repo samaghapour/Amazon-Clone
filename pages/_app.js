@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Navbar from '../component/navbar/Navbar';
 import DeliveryModule from '../component/DeliveryModule';
 import Footer from '../component/footer/Footer';
+import SideMenuContainer from '../component/sideMenu/SideMenuContainer';
 import { Auth0Provider } from '@auth0/auth0-react';
 import NextNprogress from 'nextjs-progressbar';
 import { persistStore, persistReducer } from 'redux-persist';
@@ -43,7 +44,7 @@ function MyApp({ Component, pageProps }) {
         <Provider store={Store}>
           <PersistGate loading={null} persistor={persistor}>
             <Head>
-              <link rel='icon' type='image/png' href='/assets/amazon-fav.ico' />
+              <link rel='icon' type='image/png' href='/assets/amazonFav.ico' />
               <link rel='preconnect' href='https://fonts.googleapis.com' />
               <link
                 rel='preconnect'
@@ -57,6 +58,7 @@ function MyApp({ Component, pageProps }) {
             </Head>
             <Navbar />
             <DeliveryModule />
+            <SideMenuContainer />
             <NextNprogress
               color='#ffa41c'
               startPosition={0.3}

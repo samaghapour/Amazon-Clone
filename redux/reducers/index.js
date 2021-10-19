@@ -7,6 +7,7 @@ import FilteredProductReducer from './FilteredProducts';
 import CartReducer from './CartReducer';
 import RecentlyViewedReducer from './RecentlyViewedReducer';
 import SavedProductsReducer from './SavedProductsReducer';
+import CategoriesReducer from './CategoriesReducer';
 
 export const AllReducers = combineReducers({
   Products: ProductsReducer,
@@ -17,4 +18,5 @@ export const AllReducers = combineReducers({
   Cart: CartReducer,
   RecentlyViewedProducts: RecentlyViewedReducer,
   SavedProducts: SavedProductsReducer,
+  Categories: CategoriesReducer,
 });

@@ -9,6 +9,7 @@
 @import './404.css';
 @import './Loading.css';
 @import './signup/SignUpPage.css';
+@import './sideMenu/SideMenuContainer.css';
 
 :root {
   --light-color: #fff;

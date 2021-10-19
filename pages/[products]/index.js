@@ -2,6 +2,7 @@ import ProductsPage from '../../component/pruducts/ProductsPage';
 import { commerce } from '../../lib/Commerce';
 import { useRouter } from 'next/router';
 import Loading from '../../component/Loading';
+import Head from 'next/head';
 
 const Products = ({ productCategory }) => {
   const router = useRouter();
@@ -15,6 +16,9 @@ const Products = ({ productCategory }) => {
   }
   return (
     <>
+      <Head>
+        <title>Shop Amazon.com</title>
+      </Head>
       <ProductsPage productCategory={productCategory} />
     </>
   );
