@@ -8,6 +8,7 @@ import CartReducer from './CartReducer';
 import RecentlyViewedReducer from './RecentlyViewedReducer';
 import SavedProductsReducer from './SavedProductsReducer';
 import CategoriesReducer from './CategoriesReducer';
+import AmazonAllProductsReducer from './AmazonAllProductsReducer';
 
 export const AllReducers = combineReducers({
   Products: ProductsReducer,
@@ -19,4 +20,5 @@ export const AllReducers = combineReducers({
   RecentlyViewedProducts: RecentlyViewedReducer,
   SavedProducts: SavedProductsReducer,
   Categories: CategoriesReducer,
+  AmazonAllProducts: AmazonAllProductsReducer,
 });

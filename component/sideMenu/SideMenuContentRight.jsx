@@ -7,8 +7,6 @@ const SideMenuContentRight = () => {
   const SideMenuContentRightRef = useRef();
   const Categories = useSelector((state) => state.Categories);
 
-  console.log(Categories);
-
   const GoBackToSideMenuContent = (e) => {
     SideMenuContentRightRef.current.style.transform = 'translateX(100%)';
   };

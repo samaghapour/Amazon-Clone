@@ -2,9 +2,12 @@ import { useEffect, useRef } from 'react';
 import { commerce } from '../../../lib/Commerce';
 import { resizeSelect } from '../../../helpers';
 import { useDispatch, useSelector } from 'react-redux';
+import { useRouter } from 'next/router';
 
 const SearchBox = () => {
-  const selectElem = useRef();
+  const SelectRef = useRef();
+  const SearchInputRef = useRef();
+  const router = useRouter();
   const dispatch = useDispatch();
   const Categories = useSelector((state) => state.Categories);
 
@@ -16,17 +19,23 @@ const SearchBox = () => {
       );
 
     // resize on initial load
-    resizeSelect(selectElem.current);
+    resizeSelect(SelectRef.current);
 
-    selectElem.current.addEventListener('change', (e) => {
+    SelectRef.current.addEventListener('change', (e) => {
       resizeSelect(e.target);
     });
   }, []);
 
+  const SearchProductFunc = (e) => {
+    e.preventDefault();
+
+    router.push('/searchResult');
+  };
+
   return (
-    <form id='SearchBox'>
+    <form id='SearchBox' onSubmit={SearchProductFunc}>
       <select
-        ref={selectElem}
+        ref={SelectRef}
         name='searchSelect'
         id='SearchSelect'
         defaultValue='All'>
@@ -41,7 +50,12 @@ const SearchBox = () => {
           })}
       </select>
 
-      <input type='text' id='SearchInput' autoComplete='off' />
+      <input
+        type='text'
+        id='SearchInput'
+        autoComplete='off'
+        ref={SearchInputRef}
+      />
       <button id='SearchSubmit'>
         <span />
       </button>

@@ -175,3 +175,44 @@ export const UpdateProductQuantity =
       alert('something went wrong! , try again please');
     }
   };
+
+//search and update products with search Result
+export const SearchProduct =
+  (searchCategory, searchValue, AmazonAllProducts) => async (dispatch) => {
+    let searchResult;
+
+    dispatch({ type: 'IS_LOADING', payload: true });
+
+    if (searchCategory === 'All') {
+      searchResult =
+        AmazonAllProducts &&
+        AmazonAllProducts.filter((product) => {
+          return (
+            product.name.toLowerCase().includes(searchValue.toLowerCase()) ||
+            product.id.toLowerCase() === searchValue.toLowerCase() ||
+            product.description
+              .toLowerCase()
+              .includes(searchValue.toLowerCase())
+          );
+        });
+    } else {
+      const specificProducts =
+        AmazonAllProducts &&
+        AmazonAllProducts.filter((product) => {
+          const ProductCategory =
+            product.categories[product.categories.length - 1].name;
+          return ProductCategory === searchCategory;
+        });
+
+      searchResult = specificProducts.filter((product) => {
+        return (
+          product.name.toLowerCase().includes(searchValue.toLowerCase()) ||
+          product.id.toLowerCase() === searchValue.toLowerCase() ||
+          product.description.toLowerCase().includes(searchValue.toLowerCase())
+        );
+      });
+    }
+
+    dispatch({ type: 'SEARCH_PRODUCT_RESULT', payload: searchResult });
+    dispatch({ type: 'IS_LOADING', payload: false });
+  };
