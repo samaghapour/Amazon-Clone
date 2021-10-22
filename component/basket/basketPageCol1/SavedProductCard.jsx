@@ -59,7 +59,7 @@ const SavedProductCard = ({ data, AllData }) => {
         </button>
 
         <button
-          className='saved-product-btn added-product-card-compare-btn'
+          className='saved-product-btn added-product-card-delete-btn'
           data-line-id={data?.id}
           onClick={() => DeleteSavedProductFunc(data?.id)}>
           Delete

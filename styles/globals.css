@@ -11,6 +11,7 @@
 @import './signup/SignUpPage.css';
 @import './sideMenu/SideMenuContainer.css';
 @import './SearchResultPage.css';
+@import './responsive/Responsive.css';
 
 :root {
   --light-color: #fff;
@@ -34,15 +35,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-.icon {
-  background-image: url(/assets/images/logos.png);
-  background-size: 350px;
-  min-height: 3rem;
-  height: 100%;
-  display: inline-block;
-  cursor: pointer;
 }
 .text-separator {
   margin: 0 0.5rem;

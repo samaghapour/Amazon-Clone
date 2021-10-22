@@ -1,0 +1,50 @@
+/* iPad Pro Responsive  :  max-width: 1024px*/
+
+@media only screen and (max-width: 1024px) {
+  /* products page */
+  .product-card {
+    grid-column: auto/span 4 !important;
+  }
+  #ProductsCol1 {
+    min-width: 250px !important;
+  }
+  .customer-review-items {
+    width: 77% !important;
+  }
+
+  /* product details page */
+  #TextSec {
+    width: 50% !important;
+  }
+  #AddToCartSec {
+    width: 20% !important;
+  }
+  #StarsProgressBarBox {
+    width: 80% !important;
+  }
+  #CustomerStars {
+    width: 40% !important;
+  }
+  #CustomerComments {
+    width: 60% !important;
+  }
+  /* basket page */
+
+  #BasketPageCol1 {
+    flex-basis: 70% !important;
+  }
+  #BasketPageCol2 {
+    flex-basis: 30% !important;
+  }
+  .sponsored-product-card-add-btn-container {
+    width: 100% !important;
+  }
+  .saved-product-card {
+    grid-column: auto/span 4 !important;
+  }
+  /* signup page */
+
+  .sign-up-boxes {
+    width: 70% !important;
+  }
+}

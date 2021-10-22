@@ -52,6 +52,10 @@ const AddedProductCard = ({ data, AllData }) => {
           </Link>
         </div>
 
+        <span className='added-product-card-price-for-phone'>
+          {data && data?.price?.formatted_with_symbol}
+        </span>
+
         <span className='is-in-stock-span'>In Stock</span>
 
         <div

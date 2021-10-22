@@ -4,15 +4,15 @@ const CallToCheckoutBox = () => {
   const Cart = useSelector((state) => state.Cart);
 
   return (
-    <div id='CallToCheckoutBox'>
-      <div id='CallToCheckoutBoxTitleContainer'>
-        <span id='CallToCheckoutBoxTitle'>
+    <div className='CallToCheckoutBox'>
+      <div className='CallToCheckoutBoxTitleContainer'>
+        <span className='CallToCheckoutBoxTitle'>
           Subtotal ({Cart && Cart?.cart?.total_items} items):{' '}
           <b>{Cart && Cart?.cart?.subtotal?.formatted_with_symbol}</b>
         </span>
       </div>
 
-      <div id='CallToCheckoutBoxCheckBoxContainer'>
+      <div className='CallToCheckoutBoxCheckBoxContainer'>
         <div className='filter-items'>
           <label className='filter-items-label'>
             <input type='checkBox' className='filter-items-checkbox' />
@@ -21,9 +21,7 @@ const CallToCheckoutBox = () => {
         </div>
       </div>
 
-      <button className='Yellow-btn' id='CheckoutBtn'>
-        Proceed to checkout
-      </button>
+      <button className='Yellow-btn CheckoutBtn'>Proceed to checkout</button>
     </div>
   );
 };

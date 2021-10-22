@@ -7,7 +7,7 @@ import DetailsRow3 from './DetailsRow3';
 import DetailsRow4 from './DetailsRow4';
 import DetailsRow5 from './DetailsRow5';
 import DetailsRow6 from './detailsRow6/DetailsRow6';
-import DetailsRow7 from './detailsRow7';
+import DetailsRow7 from './DetailsRow7';
 import Loading from '../Loading';
 
 const ProductDetailsPage = ({ productId }) => {

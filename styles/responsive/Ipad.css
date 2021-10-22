@@ -1,0 +1,97 @@
+/* iPad Responsive  :  max-width: 768px*/
+
+@media only screen and (max-width: 768px) {
+  /* home page  > navbar */
+  #NavBeltCol2 {
+    justify-content: flex-end;
+    width: 185px !important;
+    padding-right: 1rem;
+  }
+  .nav-child {
+    padding: 0.5rem 0.2rem !important;
+  }
+  .nav-child .locationIcon {
+    background-position: -66px -330px !important;
+    background-size: 320px !important;
+  }
+  .delivery-box-text {
+    font-size: 0.6rem;
+  }
+  #Languages,
+  .SearchSelect,
+  #Returns {
+    display: none !important;
+  }
+  .SearchBox {
+    width: 90% !important;
+  }
+
+  /* product page */
+  #ProductsCol1 {
+    min-width: 230px !important;
+  }
+  .customer-review-items {
+    width: 84% !important;
+  }
+  .rate-stars {
+    width: 65px !important;
+    background-position: 0 -52px !important;
+    background-size: 335px !important;
+    height: 80% !important;
+  }
+
+  /* product details page */
+  #ImagesSec {
+    width: 35% !important;
+  }
+  #ImagesBox {
+    width: 20% !important;
+  }
+  #LargeImageBox {
+    width: 80% !important;
+  }
+  #TextSec {
+    width: 40% !important;
+  }
+  #AddToCartSec {
+    width: 25% !important;
+  }
+  #ProductDetailsReturnPolicyContainer,
+  #ProductDetailsSecureTransactionContainer {
+    font-size: 0.9rem !important;
+  }
+
+  #CustomerStars .card-rate-box {
+    width: 100% !important;
+  }
+  #CustomerStars {
+    width: 40% !important;
+  }
+  #CustomerComments {
+    width: 60% !important;
+  }
+
+  /* basket page */
+
+  #BasketPageCol1 {
+    flex-basis: 65% !important;
+  }
+  #BasketPageCol2 {
+    flex-basis: 35% !important;
+  }
+  .saved-product-card {
+    grid-column: auto/span 5 !important;
+  }
+
+  /* signup page */
+
+  .sign-up-boxes {
+    width: 90% !important;
+  }
+
+  /* footer  */
+  .FooterSecondBoxCol {
+    padding: 0 3rem 0 0.5rem !important;
+    font-size: 0.9rem !important;
+  }
+}

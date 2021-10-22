@@ -1,4 +1,4 @@
-#SearchBox {
+.SearchBox {
   position: relative;
   display: flex;
   width: 58%;
@@ -7,10 +7,10 @@
   border-radius: 4px;
   overflow: hidden;
 }
-#SearchBox.focused {
+.SearchBox.focused {
   border: 4px solid var(--primary-color-light);
 }
-#SearchSelect {
+.SearchSelect {
   cursor: pointer;
   height: 100%;
   border: none;
@@ -20,21 +20,21 @@
   color: #494949e8;
   transition: all 0.1s ease;
 }
-#SearchSelect:hover {
+.SearchSelect:hover {
   background: #dadada;
   color: #000000;
 }
-#SearchSelect:focus {
+.SearchSelect:focus {
   border: 3px solid var(--primary-color-dark);
 }
-#SearchInput {
+.SearchInput {
   width: 90%;
   height: 100%;
   border: none;
   outline: none;
   padding: 0 0.5rem;
 }
-#SearchSubmit {
+.SearchSubmit {
   position: absolute;
   right: 0;
   top: 0;
@@ -45,7 +45,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
-#SearchSubmit span {
+.SearchSubmit span {
   background-image: url(/assets/images/logos.png);
   background-size: 350px;
   background-position: 1px -280px;

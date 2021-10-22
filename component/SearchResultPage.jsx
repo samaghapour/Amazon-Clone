@@ -11,11 +11,20 @@ const SearchResultPage = () => {
   const AmazonAllProducts = useSelector((state) => state.AmazonAllProducts);
 
   useEffect(() => {
-    const searchCategory = document.getElementById('SearchSelect')?.value,
-      searchValue = document.getElementById('SearchInput')?.value;
+    const searchCategory = document.querySelector('.SearchSelect')?.value,
+      searchValue =
+        window.innerWidth <= 480
+          ? document.querySelector('#PhoneSearchBox .SearchInput')?.value
+          : document.querySelector('.SearchInput')?.value;
 
-    dispatch(SearchProduct(searchCategory, searchValue, AmazonAllProducts));
-  }, [document.getElementById('SearchInput')?.value]);
+    if (searchValue !== '') {
+      dispatch(SearchProduct(searchCategory, searchValue, AmazonAllProducts));
+    }
+  }, [
+    document.querySelector('.SearchInput')?.value,
+    document.querySelector('.SearchSelect')?.value,
+    document.querySelector('#PhoneSearchBox .SearchInput')?.value,
+  ]);
 
   return (
     <div id='SearchResultPage'>

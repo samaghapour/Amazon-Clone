@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import { ToggleModule } from '../../../helpers';
+import MenuBtn from '../navMain/MenuBtn';
 
 const NavBeltCol1 = ({ location }) => {
   return (
     <div id='NavBeltCol1'>
-      <span id='PhoneMenu' className='close' />
+      <MenuBtn />
 
       <Link href='/'>
         <div className='icon nav-brand' />

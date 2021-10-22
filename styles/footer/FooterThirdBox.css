@@ -12,6 +12,12 @@
   flex-basis: 7rem;
 }
 .footer-brand {
+  background-image: url(/assets/images/logos.png);
+  background-size: 350px;
+  min-height: 3rem;
+  height: 100%;
+  display: inline-block;
+  cursor: pointer;
   width: 100%;
   background-position: -4px -39px;
 }

@@ -1,15 +1,10 @@
 import AddedProducts from './AddedProductCard';
 import { useSelector } from 'react-redux';
 import SavedProductCard from './SavedProductCard';
-import { useEffect } from 'react';
 
 const BasketPageCol1 = () => {
   const Cart = useSelector((state) => state.Cart);
   const SavedProducts = useSelector((state) => state.SavedProducts);
-
-  useEffect(() => {
-    console.log(Cart);
-  }, [Cart]);
 
   return (
     <div id='BasketPageCol1'>

@@ -1,0 +1,228 @@
+/* iPad Pro Responsive  :  max-width: 1024px*/
+
+@media only screen and (max-width: 540px) {
+  /* home page  */
+  #HomeProductsBox {
+    grid-template-columns: 5fr 5fr !important;
+  }
+  #NavBeltCol2 {
+    width: 185px !important;
+  }
+  #PhoneDeliveryBox {
+    display: flex !important;
+  }
+  #PhoneDeliveryBox .locationIcon {
+    min-height: 1rem;
+    background-size: 234px;
+    background-position: -44px -505px;
+  }
+
+  .deliver-country {
+    font-size: 1rem !important;
+  }
+
+  .nav-brand {
+    background-position: -7px -37px !important;
+    height: 70% !important;
+    width: 100px !important;
+  }
+  .nav-child {
+    padding: 0.5rem 0.2rem !important;
+  }
+  .nav-child .locationIcon {
+    background-position: -66px -330px !important;
+    background-size: 320px !important;
+  }
+  .delivery-box-text {
+    font-size: 0.6rem;
+  }
+  #Languages,
+  .menu-btn,
+  #NavMain::-webkit-scrollbar,
+  #DeliveryBox {
+    display: none;
+  }
+  .SearchBox {
+    width: 90% !important;
+  }
+  #NavMain {
+    overflow-x: scroll;
+    background: var(--secondary-color-dark);
+  }
+  .nav-main-items {
+    width: 100px;
+    word-wrap: normal;
+    word-break: keep-all;
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 0 0.5rem;
+  }
+  .nav-main-items a {
+    padding: 0.3rem 0 !important;
+  }
+  #NavBeltCol1 .menu-btn {
+    display: flex !important;
+    transform: scale(2);
+  }
+  .menu-btn-icon {
+    min-width: 13px !important;
+    margin: 0 auto !important;
+  }
+  .menu-btn-icon::after,
+  .menu-btn-icon::before {
+    min-width: 13px !important;
+  }
+
+  /* product page */
+  #ProductsCol1 {
+    min-width: 220px !important;
+  }
+  .customer-review-items {
+    width: 86% !important;
+  }
+  .card-rate-box {
+    flex-direction: column !important;
+    height: 36px !important;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .rate-stars {
+    width: 65px !important;
+    background-position: 0 -52px !important;
+    background-size: 335px !important;
+    height: 80% !important;
+  }
+  .product-card {
+    grid-column: auto/span 6 !important;
+  }
+
+  /* product details page */
+  #DetailsRow1,
+  #ImagesSec {
+    flex-direction: column !important;
+  }
+  #ImagesSec {
+    position: unset !important;
+  }
+
+  #ImagesBox {
+    flex-direction: row !important;
+    width: 100% !important;
+    justify-content: center;
+  }
+
+  #DetailsRow1 > *,
+  #DetailsRow6Container > *,
+  #DetailsRow3Col1,
+  .DetailsSearchInputBox,
+  #StarsProgressBarBox,
+  #RatingsCalculateLink,
+  #ReviewProductBox {
+    width: 100% !important;
+  }
+  #AddToCartSec {
+    width: 55% !important;
+    margin: 0 auto !important;
+  }
+  #DetailsRow3Col2,
+  #LargeImageDescription {
+    display: none !important;
+  }
+  #DetailsRow6Container {
+    flex-direction: column;
+  }
+  #DetailsRow7 .product-card {
+    min-height: 315px !important;
+  }
+  #LargeImageBox {
+    height: 500px !important;
+    margin: auto;
+    width: 70% !important;
+  }
+
+  /* basket page */
+  #BasketPageRow1 {
+    flex-direction: column !important;
+    padding: 0 !important;
+  }
+  #BasketPageRow1 > * {
+    width: 100% !important;
+  }
+  .added-product-card-price-for-phone,
+  #PhoneCallToCheckOutBox,
+  #PhoneCountinueShoppingBtnContainer {
+    display: block !important;
+  }
+  .ProductAddQuantity {
+    display: block !important;
+    width: 100% !important;
+    margin: 0.5rem 0;
+  }
+  .added-product-card {
+    min-height: 190px !important;
+  }
+  .added-product-card-price-ebox,
+  .added-product-card-gift-checkbox-container,
+  .added-product-card-compare-btn,
+  .added-product-card-edit-container .text-separator,
+  #AddedProductsRowSpan,
+  #PhoneCallToCheckOutBox .CallToCheckoutBoxCheckBoxContainer,
+  #BasketPageCol2 {
+    display: none !important;
+  }
+  .added-product-card-image-box {
+    flex-basis: 20% !important;
+    padding: 0 !important;
+  }
+
+  .added-product-card-delete-btn,
+  .added-product-card-save-for-later-btn {
+    margin: 0.5rem !important;
+    padding: 0.4rem 0.7rem;
+    text-align: center;
+    background: var(--light-color);
+    box-shadow: 1px 1px 1px #bec0c0, -1px -1px 1px #bec0c0;
+    color: #000;
+    border: none;
+    border-radius: 7px;
+    outline: 1px solid #d5d9d9;
+  }
+
+  #PhoneCallToCheckOutBox .CallToCheckoutBox {
+    padding-bottom: 0.3rem !important;
+  }
+  #SavedProducts {
+    display: unset !important;
+  }
+  .saved-product-card {
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+  .card-second-row .added-product-card-delete-btn {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .saved-product-card {
+    display: flex;
+  }
+  .card-image-container {
+    flex-basis: 30% !important;
+    height: 190px !important;
+  }
+  .card-second-row {
+    flex-basis: 70% !important;
+  }
+
+  /* signup page */
+  .sign-up-boxes-card,
+  .sign-up-boxes-second-row {
+    width: 70% !important;
+  }
+
+  /* footer  */
+  #FooterThirdBox,
+  #FooterFourthBoxTable {
+    display: none !important;
+  }
+}

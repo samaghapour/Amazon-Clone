@@ -1,4 +1,4 @@
-import NavBeltCol1 from './navBeltCol1';
+import NavBeltCol1 from './NavBeltCol1';
 import SearchBox from './SearchBox';
 import NavBeltCol2 from './NavBeltCol2';
 import { useSelector } from 'react-redux';

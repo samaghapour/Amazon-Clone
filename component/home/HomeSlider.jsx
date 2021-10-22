@@ -28,7 +28,7 @@ const HomeSlider = () => {
   return (
     <div id='HomeSlider'>
       <Slider {...settings}>
-        <a href='#' className='home-slider-link'>
+        <a href='/video-games' className='home-slider-link'>
           <img
             src='assets/images/home/slider images/1.jpg'
             alt='slider pic'
@@ -44,7 +44,7 @@ const HomeSlider = () => {
           />
         </a>
 
-        <a href='#' className='home-slider-link'>
+        <a href='/baby' className='home-slider-link'>
           <img
             src='assets/images/home/slider images/3.jpg'
             alt='slider pic'
@@ -52,7 +52,7 @@ const HomeSlider = () => {
           />
         </a>
 
-        <a href='#' className='home-slider-link'>
+        <a href='/video-games' className='home-slider-link'>
           <img
             src='assets/images/home/slider images/4.jpg'
             alt='slider pic'
@@ -60,7 +60,7 @@ const HomeSlider = () => {
           />
         </a>
 
-        <a href='#' className='home-slider-link'>
+        <a href='/beauty-and-personal-care' className='home-slider-link'>
           <img
             src='assets/images/home/slider images/5.jpg'
             alt='slider pic'

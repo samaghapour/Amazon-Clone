@@ -76,3 +76,6 @@
   font-size: 1.1rem;
   font-family: var(--link-font-family);
 }
+.added-product-card-price-for-phone {
+  display: none;
+}

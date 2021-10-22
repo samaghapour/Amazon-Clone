@@ -1,10 +1,10 @@
 import { ToggleSideMenu } from '../../../helpers';
 
-const MenuBtn = () => {
+const MenuBtn = ({ text }) => {
   return (
     <div className='menu-btn' onClick={ToggleSideMenu}>
       <span className='menu-btn-icon' />
-      <span className='menu-btn-text'>All</span>
+      {text === 'yes' && <span className='menu-btn-text'>All</span>}
     </div>
   );
 };

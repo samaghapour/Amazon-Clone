@@ -6,6 +6,17 @@
   font-family: var(--main-font-family);
   width: 100%;
 }
+
+#PhoneCallToCheckOutBox,
+#PhoneCountinueShoppingBtnContainer {
+  padding: 1rem 1rem 2rem;
+  display: none;
+}
+
+#PhoneCountinueShoppingBtn {
+  border-radius: 6px !important;
+}
+
 #BasketPageRow1 {
   background: #eaeded;
   width: 100%;

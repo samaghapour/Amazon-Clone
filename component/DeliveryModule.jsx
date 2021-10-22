@@ -3,11 +3,14 @@ import { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { ToggleModule } from '../helpers';
 import { ChangeDeliverLocation } from '../redux/actions';
+import Link from 'next/link';
+import { useAuth0 } from '@auth0/auth0-react';
 
 const DeliveryModule = () => {
   const locationSelectorRed = useRef();
   const dispatch = useDispatch();
   const location = useSelector((state) => state.DeliveryLocation);
+  const { isAuthenticated } = useAuth0();
 
   useEffect(() => {
     dispatch(
@@ -28,9 +31,14 @@ const DeliveryModule = () => {
             Delivery options and delivery speeds may vary for different
             locations
           </p>
-          <button id='LocationCardSignInBtn'>
-            Sign in to update your location
-          </button>
+          {!isAuthenticated && (
+            <Link href='/signup'>
+              <button id='LocationCardSignInBtn'>
+                Sign in to update your location
+              </button>
+            </Link>
+          )}
+
           <div id='LocationCardZipCode'>
             <LocationOn color='primary' />
             <span>Enter a US zip code</span>

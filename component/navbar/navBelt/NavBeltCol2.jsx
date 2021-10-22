@@ -7,16 +7,6 @@ const NavBeltCol2 = () => {
   const { logout, isAuthenticated, user } = useAuth0();
   const Cart = useSelector((state) => state.Cart);
 
-  const positionPriceNumber = {
-    left:
-      Cart && Cart.cart.total_items > 9 && Cart.cart.total_items <= 99
-        ? '25%'
-        : Cart && Cart.cart.total_items < 9
-        ? '31%'
-        : Cart && Cart.cart.total_items > 99 && '13%',
-    top: Cart && Cart.cart.total_items > 99 && '-10%',
-  };
-
   return (
     <div id='NavBeltCol2'>
       <div id='Languages' title='dummy'>
@@ -45,7 +35,7 @@ const NavBeltCol2 = () => {
         <a
           id='BasketBox'
           title={isAuthenticated ? 'Click to go to your basket' : undefined}>
-          <span id='BasketNumber' style={positionPriceNumber}>
+          <span id='BasketNumber'>
             {Cart && Cart.cart.total_items > 0 && Cart.cart.total_items <= 99
               ? Cart.cart.total_items
               : Cart && Cart.cart.total_items > 99

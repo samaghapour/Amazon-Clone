@@ -4,7 +4,7 @@ import { resizeSelect } from '../../../helpers';
 import { useDispatch, useSelector } from 'react-redux';
 import { useRouter } from 'next/router';
 
-const SearchBox = () => {
+const SearchBox = ({ placeHolder }) => {
   const SelectRef = useRef();
   const SearchInputRef = useRef();
   const router = useRouter();
@@ -33,11 +33,11 @@ const SearchBox = () => {
   };
 
   return (
-    <form id='SearchBox' onSubmit={SearchProductFunc}>
+    <form className='SearchBox' onSubmit={SearchProductFunc}>
       <select
         ref={SelectRef}
         name='searchSelect'
-        id='SearchSelect'
+        className='SearchSelect'
         defaultValue='All'>
         <option value='All'>All</option>
         {Categories &&
@@ -51,12 +51,13 @@ const SearchBox = () => {
       </select>
 
       <input
+        placeholder={placeHolder}
         type='text'
-        id='SearchInput'
+        className='SearchInput'
         autoComplete='off'
         ref={SearchInputRef}
       />
-      <button id='SearchSubmit'>
+      <button className='SearchSubmit'>
         <span />
       </button>
     </form>

@@ -17,6 +17,7 @@
 }
 .filter-items {
   list-style: none;
+  width: fit-content;
 }
 #ProductsCol1 li:hover,
 .filter-items-label:hover {

@@ -19,16 +19,13 @@ const ImagesSec = ({ data }) => {
           })}
       </div>
 
-      <div id='LargeImageBox'>
-        <img
-          src={data && data[0]?.url}
-          alt='image'
-          id='SelectedImage'
-          style={{
-            width: data && data[0]?.image_dimensions.width,
-            height: data && data[0]?.image_dimensions.height,
-          }}
-        />
+      <div
+        id='LargeImageBox'
+        style={{
+          width: data && data[0]?.image_dimensions.width,
+          height: data && data[0]?.image_dimensions.height,
+        }}>
+        <img src={data && data[0]?.url} alt='image' id='SelectedImage' />
         <span id='LargeImageDescription'>Roll over image to zoom in</span>
       </div>
     </div>

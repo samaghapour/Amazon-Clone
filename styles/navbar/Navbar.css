@@ -16,17 +16,36 @@
   width: 100%;
   padding: 0.5rem 1rem;
 }
+#PhoneSearchBox {
+  height: 3rem;
+  background: var(--secondary-color-dark);
+  width: 100%;
+  display: none;
+}
+#PhoneSearchBox .SearchBox {
+  margin: 0 auto;
+}
+#PhoneSearchBox .SearchBox .SearchSubmit {
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+#PhoneSearchBox .SearchBox .SearchSelect {
+  display: none;
+}
+
 #PhoneDeliveryBox {
   background: var(--secondary-color-light);
   width: 100%;
   padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#PhoneDeliveryBox .locationIcon {
+  min-height: 0.5rem;
+  background-size: 139px;
+  background-position: -23px -300px;
 }
 #PhoneDeliveryBox.close {
   display: none;
-}
-#PhoneDeliveryBox .delivery-box-text {
-  flex-direction: row;
-}
-#PhoneDeliveryBox .delivery-country {
-  width: 85%;
 }

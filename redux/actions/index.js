@@ -212,7 +212,6 @@ export const SearchProduct =
         );
       });
     }
-
     dispatch({ type: 'SEARCH_PRODUCT_RESULT', payload: searchResult });
     dispatch({ type: 'IS_LOADING', payload: false });
   };

@@ -1,17 +1,28 @@
+import { useSelector } from 'react-redux';
 import NavBelt from './navBelt/NavBelt';
+import SearchBox from './navBelt/SearchBox';
 import NavMain from './navMain/NavMain';
+import { ToggleModule } from '../../helpers';
+
 const Navbar = () => {
+  const country = useSelector((state) => state.DeliveryLocation);
+
   return (
     <div id='Navbar'>
       <NavBelt />
+      <div id='PhoneSearchBox'>
+        <SearchBox placeHolder='Search Amazon' />
+      </div>
       <NavMain />
 
-      <a id='PhoneDeliveryBox' className='close' href='DeliveryModule'>
+      <div id='PhoneDeliveryBox' className='close' onClick={ToggleModule}>
+        <span className='locationIcon' />
         <div className='delivery-box-text'>
-          <span>Deliver to </span>
-          <span className='deliver-country'>Islamic Republic of Iran</span>
+          <span className='deliver-country'>
+            Deliver to {country && country}
+          </span>
         </div>
-      </a>
+      </div>
     </div>
   );
 };

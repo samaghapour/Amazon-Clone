@@ -2,6 +2,8 @@ import { useSelector } from 'react-redux';
 import ProductSlider from '../ProductSlider';
 import BasketPageCol1 from './basketPageCol1/BasketPageCol1';
 import BasketPageCol2 from './basketPageCol2/BasketPageCol2';
+import CallToCheckoutBox from './basketPageCol2/CallToCheckoutBox';
+import Link from 'next/link';
 
 const BasketPage = () => {
   const data = useSelector((state) => state.RecentlyViewedProducts);
@@ -13,6 +15,9 @@ const BasketPage = () => {
 
   return (
     <div id='BasketPage'>
+      <div id='PhoneCallToCheckOutBox'>
+        <CallToCheckoutBox />
+      </div>
       <div id='BasketPageRow1'>
         <BasketPageCol1 />
         <BasketPageCol2 sponsoredData={RecentData} />
@@ -29,6 +34,14 @@ const BasketPage = () => {
           category='ProductsHasCategory'
           CardType='RecentlyViewed'
         />
+      </div>
+
+      <div id='PhoneCountinueShoppingBtnContainer'>
+        <Link href='/'>
+          <button id='PhoneCountinueShoppingBtn' className='Yellow-btn'>
+            Countinue Shopping
+          </button>
+        </Link>
       </div>
     </div>
   );
